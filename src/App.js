@@ -12,6 +12,10 @@ import Navbar from "./Components/Navbar";
 import Resource from './Pages/AdminPages/Bookings'
 import Dashboard from "./Pages/AdminPages/Dashboard";
 import AddEvent from "./Pages/UserPages.jsx/AddEvent";
+import AdminResource from "./Pages/AdminPages/Bookings";
+import AdminHome from "./Pages/AdminPages/AdminHome";
+import Setting from "./Pages/AdminPages/Setting";
+import UpdateProfileAdmin from "./Pages/AdminPages/UpdateProfileAdmin";
 
 function App() {
   return (
@@ -20,8 +24,8 @@ function App() {
         <Routes>
 
           {/* USERS ROUTES  */}
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/bookings" element={<Home />} />
           <Route path="/resetPass" element={<ResetLogin />} />
           <Route path="/addEvent" element={<AddEvent />} />
           <Route path="/updateProfile" element={<UpdateProfile />} />
@@ -29,10 +33,12 @@ function App() {
 
 
           {/* ADMIN ROUTES  */}
-          <Route path="/admin/booking" element={<Resource/>}/>
-          <Route path="/users" element={<Users />} />
-          <Route path="/addUser" element={<AddUser />} />
-          <Route path="/admin" element={<Dashboard />} />
+          <Route path="/admin/booking" element={<AdminHome/>}/>
+          <Route path="/admin/users" element={<Users />} /> 
+           <Route path="/addUser" element={<AddUser />} /> 
+           <Route path="/admin" element={<Dashboard />} /> 
+           <Route path="/admin/settings" element={<Setting />} />
+           <Route path='/admin/Profile' element={<UpdateProfileAdmin/>}/>
         </Routes>
       </div>
   );

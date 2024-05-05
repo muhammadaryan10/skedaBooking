@@ -206,7 +206,7 @@ export default function AddUser() {
                   Add User
                 </button>
                 <Link
-                  to="/users"
+                  to="/admin/users"
                   className="border p-2 px-3 text-sm hover:bg-gray-200"
                 >
                   Cancel

@@ -4,8 +4,7 @@ import { IconButton, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {  Menu, Transition } from "@headlessui/react";
 import RegisterPopUp from "./RegisterPopUp";
 
 export default function AdminSideBar() {
@@ -14,6 +13,13 @@ export default function AdminSideBar() {
     <div className="flex justify-between flex-col bg-blue-500 p-2">
       <div className="flex flex-col space-y-2">
         <Link className="text-white" to="/admin/booking">Logo</Link>
+        <Link to="/admin/booking">
+          <Tooltip title="Bookings">
+            <IconButton>
+            <FontAwesomeIcon className="text-white" icon={faBook} />
+            </IconButton>
+          </Tooltip>
+        </Link>
         <Link to="/admin">
           <Tooltip title="Dashboard">
             <IconButton>
@@ -21,7 +27,7 @@ export default function AdminSideBar() {
             </IconButton>
           </Tooltip>
         </Link>
-        <Link to="/users">
+        <Link to="/admin/users">
           <Tooltip title="users">
             <IconButton>
               <FontAwesomeIcon className="text-white" icon={faUsers} />
@@ -30,7 +36,7 @@ export default function AdminSideBar() {
         </Link>
       </div>
       <div className="flex flex-col space-y-2 my-3">
-        <Link to="/">
+        <Link to="/admin/settings">
           <Tooltip title="setting">
             <IconButton>
               <FontAwesomeIcon className="text-white" icon={faGear} />
@@ -54,11 +60,11 @@ export default function AdminSideBar() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute -left-4 -top-24 z-1000 mt-2 w-48 origin-top-left rounded-md bg-white  shadow-lg ">
+            <Menu.Items className="absolute -left-4 -top-24 z-50 mt-2 w-48 origin-top-left rounded-md bg-white  shadow-lg ">
               <Menu.Item>
-                  <Link to="/updateProfile"  className="block px-4 py-2 text-sm hover:bg-blue-500 hover:text-white">
-                    Profile
-                  </Link>
+                    <Link to="/admin/Profile"  className="block px-4 py-2 text-sm hover:bg-blue-500 hover:text-white">
+                      Profile
+                    </Link>
               </Menu.Item>
               <Menu.Item>
                   <Link to="/login"  className="block px-4 py-2 text-sm hover:text-white hover:bg-blue-500">

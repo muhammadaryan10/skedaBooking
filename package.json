@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@mui/icons-material": "^5.15.10",
+    "@mui/lab": "^5.0.0-alpha.170",
     "@mui/material": "^5.15.10",
     "@mui/styled-engine-sc": "^6.0.0-alpha.17",
     "@mui/x-date-pickers": "^6.19.5",
@@ -19,6 +20,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.46.0",
+    "axios": "^1.6.8",
     "dayjs": "^1.11.10",
     "export-to-csv": "^1.2.3",
     "globalize": "^1.7.0",
@@ -28,9 +30,12 @@
     "react-apexcharts": "^1.4.1",
     "react-big-calendar": "^1.11.0",
     "react-dom": "^18.2.0",
+    "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.8",
+    "uninstall": "^0.0.0",
+    "universal-cookie": "^7.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

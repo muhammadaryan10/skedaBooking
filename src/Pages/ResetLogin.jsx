@@ -4,6 +4,8 @@ import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function ResetLogin() {
+ 
+
   return (
     <div className="flex justify-center items-center h-[100vh]">
       <div className="shadow-lg max-w-2xl p-3">
@@ -31,7 +33,7 @@ export default function ResetLogin() {
         </div>
         <div className="text-blue-400">
         <button className="w-full text-white bg-blue-400 p-3 mb-3">Log In</button>
-        <Link to="/login" >
+        <Link to="/" >
           Back To Login Page
         </Link>
         </div>
